@@ -94,17 +94,13 @@
     width: 100%;
     margin: 0 10px;
     height: 10px;
+    color: #fff;
 }
 
 .footer-list {
     display: inline;
     transition: color 0.15s ease-in-out;
     margin: 15px;
-}
-
-.footer-list li {
-    color: #fff;
-    font-family: Gotham Medium;
 }
 
 .primary-video {

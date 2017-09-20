@@ -48,8 +48,8 @@ class App extends Component {
               <li className="col-sm-3"><a href="#">Link</a></li>
             </ul>
           </div>
-          <div className="footer-container">
-            <div>
+          <div>
+            <div className="footer-container">
               <ul className="list-unstyled">
                 <li className="footer-list"><a href="#">Tesla 2017</a></li>
                 <li className="footer-list"><a href="#">Privacy Legal</a></li>
