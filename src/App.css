@@ -1,0 +1,132 @@
+.App {
+    text-align: center;
+}
+
+.row-big {
+    height: 50px;
+    width: 100%;
+}
+
+.row-1 {
+    background-color: #FC0909;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.navbar-logo-header {
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    /* background-color: blue; */
+}
+
+.header-container-logo {
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: left;
+    justify-content: space-between;
+}
+
+.header-container {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-nav-container {
+    /* background-color: green; */
+}
+
+.title-container {
+    /* background-color: green; */
+    text-align: center;
+    width: 600px;
+    height: 200px;
+    margin: auto;
+}
+
+.header-right-nav-container {
+    /* background-color: violet; */
+    position: absolute;
+    right: 10px;
+}
+
+.middle-nav-container {
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.middle-nav-container ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.middle-nav-container ul li {
+    margin: 0 10px;
+}
+
+.sign-in {
+    right: 100px;
+    top: 0;
+    height: 100%;
+    position: absolute;
+}
+
+.tsla-header-nav--list_link {
+    display: inline;
+    transition: color 0.15s ease-in-out;
+}
+
+.footer-container {
+    /* background-color: red; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0 10px;
+    height: 10px;
+}
+
+.footer-list {
+    display: inline;
+    transition: color 0.15s ease-in-out;
+    margin: 15px;
+}
+
+.primary-video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.promoContainer {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.promoContainer>ul li a {
+    background: rgba(0, 0, 0, 0.55);
+    display: block;
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .25s ease all;
+    border: 1px solid transparent;
+}
+
+.promoContainer>ul li a:hover {
+    border: 1px solid #fff;
+}
