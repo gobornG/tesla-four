@@ -7,7 +7,14 @@ class App extends Component {
       <body>
         <div className="App">
           <div>
-
+            <div className="fullscreen-bg">
+              <video autoPlay loop className="fullscreen-bg__video">
+                <source data-src="https://www.tesla.com/ns_videos/homepage-video-summer-2017.mp4?20170808" media="(min-width: 640px)" src="https://www.tesla.com/ns_videos/homepage-video-summer-2017.mp4?20170808" />
+                <source data-src="https://www.tesla.com/ns_videos/homepage-video-summer-2017.m4v?20170808" media="(min-width: 640px)" src="https://www.tesla.com/ns_videos/homepage-video-summer-2017.m4v?20170808" />
+                <source data-src="https://www.tesla.com/ns_videos/homepage-video-summer-2017.ogv?20170808" media="(min-width: 640px)" src="https://www.tesla.com/ns_videos/homepage-video-summer-2017.ogv?20170808" />
+                <source data-src="https://www.tesla.com/ns_videos/homepage-video-summer-2017.webm?20170808" media="(min-width: 640px)" src="https://www.tesla.com/ns_videos/homepage-video-summer-2017.webm?20170808" />
+              </video>
+            </div>
           </div>
           <div className="header-container">
             <div className="navbar-logo-header">
