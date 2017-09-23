@@ -1,5 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
 .App {
     text-align: center;
+}
+
+body {
+    background-color: transparent;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E7DEDE;
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
 }
 
 .row-big {
@@ -17,7 +36,15 @@
     display: inline-block;
     position: absolute;
     left: 10px;
-    /* background-color: blue; */
+    background-image: url("tesla.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    top: 28px;
+}
+
+.navbar-logo-header h1 {
+    display: block;
+    width: 100px;
 }
 
 .header-container-logo {
@@ -42,9 +69,19 @@
 .title-container {
     /* background-color: green; */
     text-align: center;
-    width: 600px;
+    /* width: 600px; */
     height: 200px;
     margin: auto;
+    padding-top: 30px;
+    color: #fff;
+}
+
+.title-container h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 50px;
+    margin: 0px auto;
 }
 
 .header-right-nav-container {
@@ -58,12 +95,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 15px;
     padding: 10px;
     width: 100%;
 }
 
 .middle-nav-container ul {
+    /* background-color: yellow; */
     margin: 0;
     padding: 0;
     position: relative;
@@ -84,15 +122,41 @@
 .tsla-header-nav--list_link {
     display: inline;
     transition: color 0.15s ease-in-out;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.tsla-header-nav--list_link a:focus,
+.tsla-header-nav--list_link a:visited,
+.tsla-header-nav--list_link a:active {
+    text-decoration: none !important;
+    color: #fff;
+}
+
+.newsletter-container {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 50px;
+    margin: 25px;
+}
+
+.newsletter-container a {
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 10px;
 }
 
 .footer-container {
     /* background-color: red; */
     position: absolute;
     left: 0;
-    bottom: 0;
-    width: 100%;
-    margin: 0 10px;
+    right: 0;
+    bottom: 30px;
+    width: auto;
+    margin: 0 auto;
     height: 10px;
     color: #fff;
 }
@@ -100,7 +164,35 @@
 .footer-list {
     display: inline;
     transition: color 0.15s ease-in-out;
-    margin: 15px;
+    margin: 25px;
+}
+
+.footer-list a:focus,
+.footer-list a:visited,
+.footer-list a:active {
+    text-decoration: none !important;
+    color: #fff;
+}
+
+.footer-list a {
+    position: relative;
+}
+
+.footer-list a::after {
+    content: "";
+    position: absolute;
+    right: -30px;
+    height: 5px;
+    width: 5px;
+    background: red;
+    z-index: 100;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.footer-list:last-child a::after {
+    display: none;
 }
 
 .primary-video {
@@ -109,6 +201,7 @@
     position: absolute;
     left: 50%;
     top: 50%;
+    z-index: -700;
 }
 
 .promoContainer {
@@ -139,6 +232,7 @@
     bottom: 0;
     left: 0;
     overflow: hidden;
+    z-index: -1;
 }
 
 .fullscreen-bg__video {
@@ -147,6 +241,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: -700;
 }
 
 @media (min-aspect-ratio: 16/9) {

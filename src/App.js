@@ -1,24 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
+import teslaLogo from './tesla.svg';
 
 class App extends Component {
   render() {
     return (
       <body>
         <div className="App">
-          <div>
-            <div className="fullscreen-bg">
-              <video autoPlay loop className="fullscreen-bg__video">
-                <source data-src="https://www.tesla.com/ns_videos/homepage-video-summer-2017.mp4?20170808" media="(min-width: 640px)" src="https://www.tesla.com/ns_videos/homepage-video-summer-2017.mp4?20170808" />
-                <source data-src="https://www.tesla.com/ns_videos/homepage-video-summer-2017.m4v?20170808" media="(min-width: 640px)" src="https://www.tesla.com/ns_videos/homepage-video-summer-2017.m4v?20170808" />
-                <source data-src="https://www.tesla.com/ns_videos/homepage-video-summer-2017.ogv?20170808" media="(min-width: 640px)" src="https://www.tesla.com/ns_videos/homepage-video-summer-2017.ogv?20170808" />
-                <source data-src="https://www.tesla.com/ns_videos/homepage-video-summer-2017.webm?20170808" media="(min-width: 640px)" src="https://www.tesla.com/ns_videos/homepage-video-summer-2017.webm?20170808" />
-              </video>
-            </div>
-          </div>
           <div className="header-container">
-            <div className="navbar-logo-header">
-              <h2>Logo place</h2>
+            <div className="navbar-logo-header">              
+              {/* <img src={teslaLogo}  /> */}
+              <h1>
+              <img src="tesla.svg"/>
+              </h1>
             </div>
             <div className="middle-nav-container">
               <ul className="list-unstyled">
@@ -42,11 +36,14 @@ class App extends Component {
           </div>
           <div className="promoContainer clearfix">
             <ul className="list-inline">
-              <li className="col-sm-3"><a href="#">Link</a></li>
-              <li className="col-sm-3"><a href="#">Link</a></li>
-              <li className="col-sm-3"><a href="#">Link</a></li>
-              <li className="col-sm-3"><a href="#">Link</a></li>
+              <li className="col-sm-3"><a href="#">Order yours</a></li>
+              <li className="col-sm-3"><a href="#">new inventory</a></li>
+              <li className="col-sm-3"><a href="#">used inventory</a></li>
+              <li className="col-sm-3"><a href="#">test drive</a></li>
             </ul>
+          </div>
+          <div className="newsletter-container">
+            <a href="#" title="get the newsletter">Get the newsletter</a>
           </div>
           <div>
             <div className="footer-container">
@@ -58,6 +55,16 @@ class App extends Component {
                 <li className="footer-list"><a href="#">Forums</a></li>
                 <li className="footer-list"><a href="#">Locations</a></li>
               </ul>
+            </div>
+            <div>
+              <div className="fullscreen-bg">
+                <video autoPlay loop className="fullscreen-bg__video">
+                  <source data-src="https://www.tesla.com/ns_videos/homepage-video-summer-2017.mp4?20170808" media="(min-width: 640px)" src="https://www.tesla.com/ns_videos/homepage-video-summer-2017.mp4?20170808" />
+                  <source data-src="https://www.tesla.com/ns_videos/homepage-video-summer-2017.m4v?20170808" media="(min-width: 640px)" src="https://www.tesla.com/ns_videos/homepage-video-summer-2017.m4v?20170808" />
+                  <source data-src="https://www.tesla.com/ns_videos/homepage-video-summer-2017.ogv?20170808" media="(min-width: 640px)" src="https://www.tesla.com/ns_videos/homepage-video-summer-2017.ogv?20170808" />
+                  <source data-src="https://www.tesla.com/ns_videos/homepage-video-summer-2017.webm?20170808" media="(min-width: 640px)" src="https://www.tesla.com/ns_videos/homepage-video-summer-2017.webm?20170808" />
+                </video>
+              </div>
             </div>
           </div>
         </div>
