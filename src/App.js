@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import teslaLogo from './tesla.svg';
+import { slide as Menu } from 'react-burger-menu';
 
 class App extends Component {
   render() {
@@ -24,7 +25,27 @@ class App extends Component {
               </ul>
             </div>
             <div className="header-right-nav-container">
-              <h3>right nav</h3>
+              {/* <h3>right nav</h3> */}
+              {/* <nav role="navigation">
+                <div id="menuToggle">
+                  <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                      <a href="#"><li>Home</li></a>
+                      <a href="#"><li>About</li></a>
+                      <a href="#"><li>INfo</li></a>
+                      <a href="#"><li>Contact</li></a>
+                    </ul>
+                </div>
+              </nav> */}
+              <Menu>
+                <a id="home" className="menu-item" href="/">Home</a>
+                <a id="home" className="menu-item" href="/about">About</a>
+                <a id="home" className="menu-item" href="/contact">Contact</a>
+                <a id="home" className="menu-item" href="">Settings</a>
+              </Menu>
             </div>
           </div>
           <div className="main-nav-container">

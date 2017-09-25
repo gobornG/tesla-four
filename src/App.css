@@ -64,6 +64,7 @@ a:active {
 
 .main-nav-container {
     /* background-color: green; */
+    margin-top: 50px;
 }
 
 .title-container {
@@ -161,6 +162,11 @@ a:active {
     color: #fff;
 }
 
+.footer-container ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .footer-list {
     display: inline;
     transition: color 0.15s ease-in-out;
@@ -182,9 +188,9 @@ a:active {
     content: "";
     position: absolute;
     right: -30px;
-    height: 5px;
-    width: 5px;
-    background: red;
+    height: 4px;
+    width: 4px;
+    background: #999494;
     z-index: 100;
     top: 50%;
     transform: translateY(-50%);
