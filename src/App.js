@@ -2,17 +2,27 @@ import React, { Component } from 'react';
 import './App.css';
 import teslaLogo from './tesla.svg';
 import { slide as Menu } from 'react-burger-menu';
+// import Drawer from './Drawer';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import MyAwesomeReactComponent from './MyAwesomeReactComponent';
+
+// const DrawerApp = () => (
+//   <MuiThemeProvider>
+//     <MyAwesomeReactComponent />
+//   </MuiThemeProvider>
+// )
+
 
 class App extends Component {
+
   render() {
     return (
       <body>
         <div className="App">
           <div className="header-container">
-            <div className="navbar-logo-header">              
-              {/* <img src={teslaLogo}  /> */}
+            <div className="navbar-logo-header">
               <h1>
-              <img src="tesla.svg"/>
+                <img src="tesla.svg" />
               </h1>
             </div>
             <div className="middle-nav-container">
@@ -26,26 +36,9 @@ class App extends Component {
             </div>
             <div className="header-right-nav-container">
               {/* <h3>right nav</h3> */}
-              {/* <nav role="navigation">
-                <div id="menuToggle">
-                  <input type="checkbox" />
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <ul id="menu">
-                      <a href="#"><li>Home</li></a>
-                      <a href="#"><li>About</li></a>
-                      <a href="#"><li>INfo</li></a>
-                      <a href="#"><li>Contact</li></a>
-                    </ul>
-                </div>
-              </nav> */}
-              <Menu>
-                <a id="home" className="menu-item" href="/">Home</a>
-                <a id="home" className="menu-item" href="/about">About</a>
-                <a id="home" className="menu-item" href="/contact">Contact</a>
-                <a id="home" className="menu-item" href="">Settings</a>
-              </Menu>
+              {/* <div>
+                <MyAwesomeReactComponent />
+              </div> */}
             </div>
           </div>
           <div className="main-nav-container">
